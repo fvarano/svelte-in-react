@@ -1,0 +1,42 @@
+# Source files (since we publish the dist folder)
+src/
+tests/
+examples/
+
+# Configuration files
+.github/
+.vscode/
+.idea/
+.editorconfig
+.eslintrc
+.eslintignore
+.prettierrc
+.prettierignore
+tsconfig.json
+vite.config.ts
+jest.config.js
+CONTRIBUTING.md
+
+# Build and development files
+node_modules/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+.DS_Store
+.env*
+.cache/
+.tmp/
+temp/
+
+# Git files
+.git/
+.gitignore
