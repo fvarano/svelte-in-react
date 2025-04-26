@@ -139,6 +139,12 @@ function App() {
 }
 ```
 
+### Complete Examples
+
+For more comprehensive examples, check out the [examples](./examples) directory in this repository:
+
+- **[Next.js Example](./examples/next)**: A complete Next.js application demonstrating how to use Svelte components in a React application with shared state.
+
 ## License
 
 MIT
