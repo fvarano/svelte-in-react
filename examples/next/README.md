@@ -47,15 +47,17 @@ The React component uses the `useSvelteComponent` hook to convert the Svelte com
 const SvelteCounter = useSvelteComponent(SvelteCounterComponent);
 ```
 
-The Next.js configuration uses the `addSvelteBridge` helper to set up webpack for Svelte:
+The Next.js configuration uses the `configureSvelteForWebpack` helper to set up webpack for Svelte:
 
 ```ts
-import { addSvelteBridge } from "svelte-in-react/webpack";
+import { configureSvelteForWebpack } from "svelte-in-react/webpack";
 
 const nextConfig = {
-  webpack: (config, context) => {
-    addSvelteBridge(config, context);
-    return config;
-  },
+	webpack: (config, context) => {
+		configureSvelteForWebpack(config, context);
+		return config;
+	},
 };
+
+export default nextConfig;
 ```

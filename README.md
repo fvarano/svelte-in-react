@@ -54,11 +54,11 @@ For projects using Webpack (including Next.js), you need to configure your bundl
 
 ```js
 // next.config.js
-import { addSvelteBridge } from "svelte-in-react/webpack";
+import { configureSvelteForWebpack } from "svelte-in-react/webpack";
 
 const nextConfig = {
 	webpack: (config, context) => {
-		addSvelteBridge(config, context);
+		configureSvelteForWebpack(config, context);
 		return config;
 	},
 };
@@ -69,12 +69,12 @@ export default nextConfig;
 You can optionally specify a custom working directory:
 
 ```js
-addSvelteBridge(config, context, {
+configureSvelteForWebpack(config, context, {
 	cwd: path.join(__dirname, "packages/react-app"),
 });
 ```
 
-> **Note:** When using with webpack, make sure you have installed `svelte-loader` as mentioned in the installation section.
+> **Note:** When using with webpack, make sure you have installed `svelte-loader` as mentioned in the installation section. The previous function name `addSvelteBridge` is still supported for backward compatibility.
 
 ### Vite Configuration
 
