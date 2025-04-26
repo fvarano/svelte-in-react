@@ -21,8 +21,11 @@ npm install svelte-in-react
 # Install peer dependencies if you don't already have them
 npm install -D svelte@^5.0.0
 
-# If using webpack, also install
+# Bundler specific dependencies
+# Webpack (Next.js)
 npm install -D svelte-loader@^3.1.0
+# Vite
+npm install -D @sveltejs/vite-plugin-svelte
 ```
 
 ## Usage
@@ -72,6 +75,23 @@ addSvelteBridge(config, context, {
 ```
 
 > **Note:** When using with webpack, make sure you have installed `svelte-loader` as mentioned in the installation section.
+
+### Vite Configuration
+
+For projects using Vite, you need to configure your bundler to handle Svelte files:
+
+```js
+// vite.config.js or vite.config.ts
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+
+export default defineConfig({
+	plugins: [react(), svelte()],
+});
+```
+
+> **Note:** When using with Vite, make sure you have installed `@sveltejs/vite-plugin-svelte` as a dev dependency: `npm install -D @sveltejs/vite-plugin-svelte`.
 
 ## How It Works
 
