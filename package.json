@@ -6,7 +6,8 @@
 	"types": "./dist/index.d.ts",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build"
+		"build": "vite build",
+		"prepublishOnly": "npm run build"
 	},
 	"author": "Federico Varano",
 	"license": "MIT",
