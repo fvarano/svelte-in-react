@@ -144,6 +144,7 @@ function App() {
 For more comprehensive examples, check out the [examples](./examples) directory in this repository:
 
 - **[Next.js Example](./examples/next)**: A complete Next.js application demonstrating how to use Svelte components in a React application with shared state.
+- **[Vite Example](./examples/vite)**: A Vite + React + TypeScript application showing how to integrate Svelte components with proper bundling configuration.
 
 ## License
 
