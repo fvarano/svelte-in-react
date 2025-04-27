@@ -11,7 +11,7 @@
 		"next": "15.3.1",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
-		"svelte-in-react": "file:../.."
+		"svelte-in-react": "file:../../"
 	},
 	"devDependencies": {
 		"@types/node": "^20.0.0",

@@ -5,11 +5,11 @@ const prod = process.env.NODE_ENV === "production";
 function getSvelteLoaderOptions({ isServer }: { isServer: boolean }) {
 	return {
 		compilerOptions: {
-			dev: !prod, // Default: false
-			generate: isServer ? "ssr" : "dom", // for example, SSR can be enabled here
+			dev: !prod,
+			generate: isServer ? "ssr" : "dom",
 		},
-		emitCss: prod, // Default: false
-		hotReload: !prod, // Default: false
+		emitCss: prod,
+		hotReload: !prod,
 	};
 }
 
